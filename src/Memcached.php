@@ -124,9 +124,9 @@ class Memcached extends AbstractAdapter implements CacheInterface
 
     /**
      * Save some string data into a cache record
-     * @param  string $id Cache id
-     * @param  mixed $data Data to cache
-     * @param  int | false $specificLifetime If != false, set a specific lifetime
+     * @param string $id Cache id
+     * @param mixed $data Data to cache
+     * @param int | false $specificLifetime If != false, set a specific lifetime
      *  for this cache record (null => infinite lifetime)
      * @return bool True if no problem
      */
@@ -207,7 +207,7 @@ class Memcached extends AbstractAdapter implements CacheInterface
 
     /**
      * Load data from cache
-     * @param  string $id Cache id
+     * @param string $id Cache id
      * @return mixed|null Cached null on not found
      */
     public function load(string $id)

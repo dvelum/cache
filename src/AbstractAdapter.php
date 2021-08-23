@@ -32,9 +32,9 @@ abstract class AbstractAdapter
      * @var array<string,int>
      */
     protected $stat = [
-        'load' => 0 ,
+        'load' => 0,
         'add' => 0,
-        'save' => 0 ,
+        'save' => 0,
         'remove' => 0,
     ];
 
@@ -118,8 +118,8 @@ abstract class AbstractAdapter
     public function resetOperationsStat(): void
     {
         $this->stat = [
-            'load' => 0 ,
-            'save' => 0 ,
+            'load' => 0,
+            'save' => 0,
             'remove' => 0
         ];
     }
