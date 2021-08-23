@@ -1,7 +1,7 @@
 parameters:
 	scanDirectories:
 	    -  %currentWorkingDirectory%/src
-	    -  %currentWorkingDirectory%/tests/unit/dvelum
+	    -  %currentWorkingDirectory%/tests/unit
 	autoload_files: []
 	polluteCatchScopeWithTryAssignments: true
 	level: max
