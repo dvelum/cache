@@ -1,23 +1,20 @@
 {
-    "name": "dvelum/dvelum-core",
-    "version": "4.0.0-dev",
-    "type": "project",
-    "description": "DVelum 4.x core",
-    "keywords": ["dvelum","php"],
-    "homepage": "https://github.com/dvelum/dvelum-core",
+    "name": "dvelum/cache",
+    "version": "4.0.0",
+    "type": "library",
+    "description": "DVelum 4.x Cache extension",
+    "keywords": ["dvelum","php","cache"],
+    "homepage": "https://github.com/dvelum/cache",
     "license": "MIT",
     "authors": [
         {
             "name": "Kirill Yegorov",
             "role": "Founder, Developer"
-        },{
-            "name": "Sergey Leschenko",
-            "role": "Developer"
         }
     ],
     "support": {
-        "issues": "https://github.com/dvelum/dvelum/issues",
-        "source": "https://github.com/dvelum/dvelum-core"
+        "issues": "https://github.com/dvelum/cache/issues",
+        "source": "https://github.com/dvelum/cache"
     },
     "config": {
         "preferred-install": "dist",
@@ -25,20 +22,7 @@
     },
     "require": {
         "php":">=7.4.0",
-        "ext-mysqli" : "*",
-        "ext-gd" : "*",
-        "ext-mbstring" : "*",
-        "ext-json": "*",
-        "composer/installers": "~1.9",
-        "oomphinc/composer-installers-extender": "^2.0",
-        "laminas/laminas-db": "^2.11",
-        "laminas/laminas-mail": "^2.12",
-        "laminas/laminas-httphandlerrunner": "^1.3",
-        "psr/log": "^1.1",
-        "psr/container": "^2.0",
-        "matthiasmullie/minify": "~1.3",
-        "nyholm/psr7": "^1.4",
-        "nyholm/psr7-server": "^1.0"
+        "ext-memcached" : "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -47,12 +31,9 @@
         "phpstan/phpstan": "^0.12",
         "codacy/coverage": "dev-master"
     },
-    "extra": {
-        "installer-types": ["js-library","dvelum4-extension"],
-        "installer-paths": {
-            "www/js/lib/{$name}": ["type:js-library"],
-            "modules/{$vendor}/{$name}":["type:dvelum4-module"],
-            "extensions/{$vendor}/{$name}":["type:dvelum4-extension"]
+    "autoload": {
+        "psr-4": {
+            "Dvelum\\Cache\\": "src/"
         }
     }
 }
