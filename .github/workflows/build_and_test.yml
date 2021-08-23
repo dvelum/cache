@@ -40,11 +40,3 @@ jobs:
 
     - name: PHPStan tests
       run: php -d memory_limit=256M ./vendor/bin/phpstan analyse src
-      
-    - name: PHPUnit tests
-      run: ./vendor/bin/phpunit -c ./phpunit.xml.dist --coverage-clover coverage.xml
-      
-    - name: Send Coverage report
-      run: php vendor/bin/codacycoverage clover coverage.xml 
-      env: 
-         CODACY_PROJECT_TOKEN: ${{secrets.CODACY}}
