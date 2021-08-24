@@ -1,6 +1,6 @@
 {
     "name": "dvelum/cache",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "type": "library",
     "description": "DVelum 4.x Cache extension",
     "keywords": ["dvelum","php","cache"],

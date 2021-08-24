@@ -28,9 +28,7 @@
  */
 declare(strict_types=1);
 
-namespace App\Cache;
-
-use Dvelum\Cache\CacheInterface;
+namespace Dvelum\Cache;
 
 /**
  * Class Runtime
